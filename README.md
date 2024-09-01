@@ -1,5 +1,5 @@
 # API de Conversión de RTF a HTML
-Esta API permite convertir texto en formato RTF (Rich Text Format) a HTML. Cada línea del texto RTF se convierte en un párrafo <p> dentro de un contenedor <div>. La API está construida utilizando FastAPI y utiliza pypandoc para la conversión de RTF a texto plano.
+Esta API permite convertir texto en formato RTF (Rich Text Format) a HTML. Cada línea del texto RTF se convierte en un párrafo `<p>` dentro de un contenedor `<div>`. La API está construida utilizando FastAPI y utiliza pypandoc para la conversión de RTF a texto plano.
 
 ## Descripción
 - Endpoint: /convertir
