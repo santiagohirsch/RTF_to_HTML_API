@@ -81,9 +81,6 @@ def rtf_to_html_div(rtf_text: str) -> str:
             normalized_original_line = ' '.join(original_line.split())
             
             for i, line in enumerate(normalized_html_lines):
-                print("Normalized original line:", normalized_original_line)
-                print("Line:", line)
-                print("------------------------")
                 if normalized_original_line in line:
                     normalized_html_lines[i] = line.replace(normalized_original_line, styled_line)
         
