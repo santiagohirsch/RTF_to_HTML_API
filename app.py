@@ -41,6 +41,8 @@ def extract_styles_and_lines(rtf_text: str):
         html_paragraph = pypandoc.convert_text(paragraph, 'html', format='rtf')
         
         cleaned_html_paragraph = re.sub(r'\s+', ' ', html_paragraph).strip()
+        if not cleaned_html_paragraph:
+            continue
         
         style_attributes = []
 
